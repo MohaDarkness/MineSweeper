@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <h1>MineSweeper</h1>
+    
+    <h1 id="game-status"></h1>
+    <div class="row-flex">
+        <div class="column-flex" id="welcome-menu">
+            <h1>Welcome</h1>
+            <button class="menu-button" onclick="startTheGame()">START</button>
+            <button class="menu-button">SETTINGS</button>
+        </div>
+
+        <div class="wrapped-row-flex" id="the-game-div">
+
+        </div>
+    </div>
+
+    <script src="./scripts/wonTheGame.js"></script>
+    <script src="./scripts/winCheck.js"></script>
+    <script src="./scripts/expansion.js"></script>
+    <script src="./scripts/gameOver.js"></script>
+    <script src="./scripts/mouseClicks.js"></script>
+    <script src="./scripts/Cell.js"></script>
+    <script src="./scripts/cellsFactory.js"></script>
+    <script src="./scripts/setCellsNumbers.js"></script>
+    <script src="./scripts/myscript.js"></script>
+</body>
+
+</html>

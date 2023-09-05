@@ -1,0 +1,111 @@
+html{
+    background-color: #EEE3CB;
+    font-family: 'roboto';
+}
+
+body{
+    text-align: center;
+    padding-top:1%;
+    color:#967E76;
+}
+
+.menu-button{
+    width:60%;
+    height:50px;
+    margin: 30px 0px;
+    border: 0.1px solid #967E76;
+    border-radius: 10px;
+    background-color: #D7C0AE;
+    font-family: 'roboto';
+    font-size:15px;
+    font-weight: bolder;
+    color:#6e5c56;
+    opacity: 1;
+}
+
+.menu-button:hover{
+    background-color: #bba697;
+    cursor: pointer;
+}
+
+.row-flex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column-flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapped-row-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+}
+
+#welcome-menu{
+    color:white;
+    background-color: #967E76;
+    width:50%;
+    border-radius: 30px ;
+    padding: 5px 10px 55px 10px;
+    opacity:0.9;
+}
+
+#the-game-div{
+    display:none;
+    width:1250px;
+}
+
+.cell{
+    width:45px;
+    height:45px;
+    border-radius: 4px;
+    
+}
+
+.cell-unpressed{
+    background-color:#EEE3CB;
+}
+
+.cell-unpressed:hover{
+    cursor: pointer;
+    background-color:#d3c9b4;
+}
+
+.cell-unpressed h3{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cell-pressed{
+    background-color:#a39c8c;
+    border-style:inset;
+    box-shadow: none;
+    cursor:default;
+}
+.cell-pressed h3{
+    opacity: 1;
+    color: #5e504b;
+}
+
+.flagged-cell{
+    background-image: url("../assets/flag.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+
+.lost{
+    color: rgb(223, 105, 105);
+}
+
+.won{
+    color: rgb(101, 211, 101);
+}
