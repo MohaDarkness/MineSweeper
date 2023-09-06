@@ -1,12 +1,18 @@
 html{
     background-color: #EEE3CB;
+    /* background-color: #ffc3c3; */
     font-family: 'roboto';
+    padding: 0px;
 }
 
 body{
+    padding: 0px;
+    margin: 0px;
     text-align: center;
+    height: 99vh;
     padding-top:1%;
-    color:#967E76;
+    color:#967E76;  
+    transition: 2.5s;
 }
 
 .menu-button{
@@ -67,7 +73,6 @@ body{
     width:45px;
     height:45px;
     border-radius: 4px;
-    
 }
 
 .cell-unpressed{
@@ -77,6 +82,7 @@ body{
 .cell-unpressed:hover{
     cursor: pointer;
     background-color:#d3c9b4;
+    transition: 0.1s;
 }
 
 .cell-unpressed h3{
@@ -89,10 +95,15 @@ body{
     border-style:inset;
     box-shadow: none;
     cursor:default;
+    transition: 0.3s;
 }
 .cell-pressed h3{
+    transition: 0.8s;
     opacity: 1;
     color: #5e504b;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    /* background-color: #d15858; */
 }
 
 .flagged-cell{
@@ -108,4 +119,8 @@ body{
 
 .won{
     color: rgb(101, 211, 101);
+}
+
+#game-status{
+    height:35px;
 }
